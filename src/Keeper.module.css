@@ -1,0 +1,46 @@
+.note {
+ background-color: hsl(193, 86%, 75%);
+ width: 300px;
+ height: 150px;
+ padding: 15px;
+ text-align: center;
+ margin: 10px;
+ padding-top: 1px;
+ border-radius: 10px;
+ display: inline-block;
+ overflow: auto; 
+}
+
+.note h1{
+ font-size: 1.1em;
+ margin-bottom: 6px;
+}
+.note p{
+ font-size: 1.1em;
+ margin-bottom: 10px;
+ white-space: pre - wrap;
+ word-wrap: break-word;
+}
+@keyframes fadeIn {
+ from {
+   opacity: 0;
+ }
+ to {
+   opacity: 1;
+ }
+}
+
+.button {
+ background-color: #fa10df;
+ color: hsl(0, 0%, 100%);
+ border-radius:10px;
+ padding: 10px 20px;
+ border: none;
+ cursor: pointer;
+ animation: fadeIn 1s ease-in-out; 
+ transition: transform 0.2s; 
+}
+
+.button:hover {
+ transform: scale(1.1); 
+}
