@@ -6,12 +6,10 @@ import Footer from './Footer.js';
 import Createarea from './Createarea.js';
 function App() {
   const [notes, setNotes] = useState(() => {
-    // Retrieve notes from localStorage, or return an empty array if none are found
     const savedNotes = localStorage.getItem('notes');
     return savedNotes ? JSON.parse(savedNotes) : [];
   });
   useEffect(() => {
-    // Save notes to localStorage whenever the notes array changes
     localStorage.setItem('notes', JSON.stringify(notes));
   }, [notes]);
   function addNote(newNote) {
